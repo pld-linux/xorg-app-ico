@@ -1,19 +1,18 @@
 Summary:	ico application
 Summary(pl):	Aplikacja ico
 Name:		xorg-app-ico
-Version:	0.99.0
-Release:	0.02
+Version:	0.99.2
+Release:	0.1
 License:	MIT
 Group:		X11/Applications
-Source0:	http://xorg.freedesktop.org/X11R7.0-RC0/app/ico-%{version}.tar.bz2
-# Source0-md5:	f78328c796490cc1e5c4d7f7ac4005ff
-Patch0:		ico-man.patch
+Source0:	http://xorg.freedesktop.org/releases/X11R7.0-RC1/app/ico-%{version}.tar.bz2
+# Source0-md5:	37d056de4585433f87f758d9a7367e70
 URL:		http://xorg.freedesktop.org/
-BuildRequires:	autoconf
+BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
 BuildRequires:	pkgconfig >= 0.19
-BuildRequires:	xorg-lib-libX11-devel
-BuildRequires:	xorg-util-util-macros
+BuildRequires:	xorg-lib-libX11-devel >= 0.99.1
+BuildRequires:	xorg-util-util-macros >= 0.99.1
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -24,7 +23,6 @@ Aplikacja ico.
 
 %prep
 %setup -q -n ico-%{version}
-%patch0 -p1
 
 %build
 %{__aclocal}
@@ -39,12 +37,14 @@ Aplikacja ico.
 rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
-	DESTDIR=$RPM_BUILD_ROOT
+	DESTDIR=$RPM_BUILD_ROOT \
+	appmandir=%{_mandir}/man1
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%doc ChangeLog
 %attr(755,root,root) %{_bindir}/*
-%{_mandir}/man1/*.1*
+%{_mandir}/man1/*.1x*
