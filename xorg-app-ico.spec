@@ -1,12 +1,12 @@
 Summary:	ico application
 Summary(pl):	Aplikacja ico
 Name:		xorg-app-ico
-Version:	0.99.2
+Version:	0.99.3
 Release:	0.1
 License:	MIT
 Group:		X11/Applications
-Source0:	http://xorg.freedesktop.org/releases/X11R7.0-RC1/app/ico-%{version}.tar.bz2
-# Source0-md5:	37d056de4585433f87f758d9a7367e70
+Source0:	http://xorg.freedesktop.org/releases/X11R7.0-RC2/app/ico-%{version}.tar.bz2
+# Source0-md5:	b6eb0da82e67f68b28d26ab97142600a
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
