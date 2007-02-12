@@ -1,5 +1,5 @@
 Summary:	ico application
-Summary(pl.UTF-8):   Aplikacja ico
+Summary(pl.UTF-8):	Aplikacja ico
 Name:		xorg-app-ico
 Version:	1.0.1
 Release:	1
