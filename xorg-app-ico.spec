@@ -1,5 +1,5 @@
 Summary:	ico application
-Summary(pl):	Aplikacja ico
+Summary(pl.UTF-8):   Aplikacja ico
 Name:		xorg-app-ico
 Version:	1.0.1
 Release:	1
@@ -18,7 +18,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 ico application.
 
-%description -l pl
+%description -l pl.UTF-8
 Aplikacja ico.
 
 %prep
