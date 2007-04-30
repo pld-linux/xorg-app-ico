@@ -1,5 +1,5 @@
-Summary:	ico application
-Summary(pl.UTF-8):	Aplikacja ico
+Summary:	ico application - animate an icosahedron or other polyhedron
+Summary(pl.UTF-8):	Aplikacja ico - animowanie dwudziestościanu lub innego wielościanu
 Name:		xorg-app-ico
 Version:	1.0.1
 Release:	1
@@ -16,10 +16,16 @@ BuildRequires:	xorg-util-util-macros >= 0.99.2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-ico application.
+ico displays a wire-frame rotating polyhedron, with hidden lines
+removed, or a solid-fill polyhedron with hidden faces removed. There
+are a number of different polyhedra available; adding a new polyhedron
+to the program is quite simple.
 
 %description -l pl.UTF-8
-Aplikacja ico.
+ico wyświetla obracający się model drutowy dwudziestościanu bez
+ukrytych krawędzi lub wypełniony wielościan bez niewidocznych ścian.
+Dostępnych jest wiele różnych wielościanów; dodanie do programu nowego
+wielościanu jest dość proste.
 
 %prep
 %setup -q -n ico-%{version}
