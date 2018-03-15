@@ -1,13 +1,13 @@
 Summary:	ico application - animate an icosahedron or other polyhedron
 Summary(pl.UTF-8):	Aplikacja ico - animowanie dwudziestościanu lub innego wielościanu
 Name:		xorg-app-ico
-Version:	1.0.4
-Release:	2
+Version:	1.0.5
+Release:	1
 License:	MIT
 Group:		X11/Applications
-Source0:	http://xorg.freedesktop.org/releases/individual/app/ico-%{version}.tar.bz2
-# Source0-md5:	be8062c90bd91f3cb848290170be83a1
-URL:		http://xorg.freedesktop.org/
+Source0:	https://xorg.freedesktop.org/releases/individual/app/ico-%{version}.tar.bz2
+# Source0-md5:	7895f2d109f4206b6d2db37257e07d12
+URL:		https://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.60
 BuildRequires:	automake
 BuildRequires:	pkgconfig >= 1:0.19
